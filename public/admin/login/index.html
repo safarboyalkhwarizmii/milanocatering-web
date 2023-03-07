@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <form class="login-form">
+        <label for="username">
+            <span>Foydalanuvchi nomi</span>
+            <input type="text" id="username" placeholder="john@example.com" />
+        </label>
+
+        <label for="password">
+            <span>Parol</span>
+            <input type="password" id="password" placeholder="********" />
+        </label>
+
+        <button type="submit" class="primary-button" id="login-button">
+            <span class="btn-text">Kirish</span>
+            <img class="unlock-icon" src="../../images/icons/unlock.svg" style="margin-left: 10px;" width="20px" alt="">
+        </button>
+    </form>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="#signout" id="signout" onclick="signOut()">
+                <img src="../images/icons/signout.svg" />
+            </a>
+
+            <a href="/admin/category/publish" id="publish">
+                
+            </a>
+        </nav>
+
+        <div class="right">
+            <a href="/admin/category/create">
+                <button class="primary-button" id="add-button">
+                    <img src="../images/plus-icon.svg" alt="plus" class="btn-image" id="add-button-image" />
+                    <span class="btn-text">Kategoriya yaratish</span>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="categories"></div>
+    <div class="categories-page"></div>
+
+    <div class="delete-popup d-none">
+        <div class="content-wrapper">
+            <p>Are you sure you want to permanently delete this category?</p>
+            <div class="btn-group">
+                <button class="light-button" onclick="cancel()">Cancel</button>
+                <button class="danger-button"> Yes, I delete it </button>
+            </div>
+            <img src="/images/x-icon.svg" onclick="cancel()" alt="x" class="x-icon">
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/admin.js"></script>
+</body>
+</html>

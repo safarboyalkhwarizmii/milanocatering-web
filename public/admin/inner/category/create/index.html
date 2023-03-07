@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichki kategoriya yaratish</title>
+
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+</head>
+<body>
+    <a href="../" class="back-ico">
+        <img src="/images/icons/arrowleft.svg" />
+    </a>
+    
+    <form class="category-create">
+        <label for="imageInput">
+            <div class="wrapper">
+                <input type="file" id="imageInput" />
+                
+                <button type="button" class="mix-btn" id="upload-button" onclick="getFile()">
+                    <span class="upload-icon"></span>
+
+                    <img src="/images/upload-icon.svg" width="20" height="20" id="upload-icon" />
+                    RASM YUKLASH
+                </button>
+                <span></span>
+            </div>
+        </label>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <label for="titleUz">
+                    <span>Sarlavha</span>
+                    <input type="text" id="titleUz" />
+                </label>
+            </div>
+            
+            <div class="col-md-6 col-sm-12">
+                <label for="titleRu">
+                    <span>Название</span>
+                    <input type="text" id="titleRu" />
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <label for="descriptionUz">
+                    <span>Ta’rif</span>
+                    <textarea type="text" id="descriptionUz"></textarea>
+                </label>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <label for="descriptionRu">
+                    <span>Описание</span>
+                    <textarea type="text" id="descriptionRu"></textarea>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="mix-outlined-btn mx-auto" id="send-category">SAQLASH</button>
+    </form>
+    
+    <div class="alert alert-success d-none" role="alert">
+        Muvaffaqiyatli yaratildi!
+    </div>
+
+    <script>
+        function getFile() {
+            document.getElementById("imageInput").click();
+        }
+    </script>
+
+    <script src="../../../scripts/script.js"></script>
+    <script src="create.js"></script>
+</body>
+</html>

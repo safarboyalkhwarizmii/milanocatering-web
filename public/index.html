@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Milano Catering в Ташкенте Банкеты Шведский стол Кофе брейки Барбекю">
+    <meta name="author" content="Milano">
+
+    <title>Milano Catering</title>
+
+    <link rel="shortcut icon" type="image/png" href="/images/logo.ico"/>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="/css/venobox.css" rel="stylesheet"/>
+
+    <link href="/css/select2.min.css" rel="stylesheet"/>
+    
+    <link href="/css/owl.carousel.min.css" rel="stylesheet">
+    
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+    
+    <link href="/css/animate.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/simplyCountdown.theme.default.css"/>
+    
+    <link rel="stylesheet" href="/css/jquery-swipe-nav.css" />
+    
+    <link href="/css/style.css" rel="stylesheet" /> 
+</head>
+
+<body class="catering">
+    <header id="intro" class="catering_header">
+        <nav>
+            <div class="language">
+                <span id="ru">Русский</span>
+                <span class="inner" id="uz">O'zbekcha</span>
+                <img src="/images/icons/toggle.svg" alt="" />
+            </div>
+        </nav>
+        
+        <a href="tel:+998998990181" rel="nofollow" class="btn-call">
+            <div class="btn-call__ico">
+                <img src="/images/icons/call-icon-light.svg" id="btn-call__img" alt="">
+            </div>
+        </a>
+        
+        <style>
+            /* btn-call */
+
+            .btn-call {
+                background: #111111;
+                border: 2px solid #eec76f;
+                border-radius: 50%;
+                box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
+                cursor: pointer;
+                height: 60px;
+                width: 60px;
+                text-align: center;
+                position: fixed;
+                right: 30px;
+                bottom: 100px;
+                z-index: 999;
+                transition: .3s;
+                -webkit-animation: hoverWave linear 1s infinite;
+                animation: hoverWave linear 1s infinite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            .btn-call__ico {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: 1200ms ease 0s normal none 1 running shake;
+                animation-iteration-count: infinite;
+                -webkit-animation: 1200ms ease 0s normal none 1 running shake;
+                -webkit-animation-iteration-count: infinite;
+                color: white;
+                font-size: 30px;
+                padding-top: 5px;
+                transition: .3s all;
+            }
+
+            .btn-call:hover {
+                background-color: #fff;
+            }
+
+            .btn-call:hover .btn-call__ico {
+                color: #c80101;
+            }
+
+            @-webkit-keyframes hoverWave {
+                0% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 0 rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+                }
+
+                40% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 15px rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+                }
+
+                80% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 26.7px rgba(56, 163, 253, 0.067)
+                }
+
+                100% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 40px rgba(56, 163, 253, 0.0)
+                }
+            }
+
+            @keyframes hoverWave {
+                0% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 0 rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+                }
+
+                40% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 15px rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+                }
+
+                80% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 26.7px rgba(56, 163, 253, 0.067)
+                }
+
+                100% {
+                    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 40px rgba(56, 163, 253, 0.0)
+                }
+            }
+
+            /* animations icon */
+
+            @keyframes shake {
+                0% {
+                    transform: rotateZ(0deg);
+                    -ms-transform: rotateZ(0deg);
+                    -webkit-transform: rotateZ(0deg);
+                }
+
+                10% {
+                    transform: rotateZ(-30deg);
+                    -ms-transform: rotateZ(-30deg);
+                    -webkit-transform: rotateZ(-30deg);
+                }
+
+                20% {
+                    transform: rotateZ(15deg);
+                    -ms-transform: rotateZ(15deg);
+                    -webkit-transform: rotateZ(15deg);
+                }
+
+                30% {
+                    transform: rotateZ(-10deg);
+                    -ms-transform: rotateZ(-10deg);
+                    -webkit-transform: rotateZ(-10deg);
+                }
+
+                40% {
+                    transform: rotateZ(7.5deg);
+                    -ms-transform: rotateZ(7.5deg);
+                    -webkit-transform: rotateZ(7.5deg);
+                }
+
+                50% {
+                    transform: rotateZ(-6deg);
+                    -ms-transform: rotateZ(-6deg);
+                    -webkit-transform: rotateZ(-6deg);
+                }
+
+                60% {
+                    transform: rotateZ(5deg);
+                    -ms-transform: rotateZ(5deg);
+                    -webkit-transform: rotateZ(5deg);
+                }
+
+                70% {
+                    transform: rotateZ(-4.28571deg);
+                    -ms-transform: rotateZ(-4.28571deg);
+                    -webkit-transform: rotateZ(-4.28571deg);
+                }
+
+                80% {
+                    transform: rotateZ(3.75deg);
+                    -ms-transform: rotateZ(3.75deg);
+                    -webkit-transform: rotateZ(3.75deg);
+                }
+
+                90% {
+                    transform: rotateZ(-3.33333deg);
+                    -ms-transform: rotateZ(-3.33333deg);
+                    -webkit-transform: rotateZ(-3.33333deg);
+                }
+
+                100% {
+                    transform: rotateZ(0deg);
+                    -ms-transform: rotateZ(0deg);
+                    -webkit-transform: rotateZ(0deg);
+                }
+            }
+
+            @-webkit-keyframes shake {
+                0% {
+                    transform: rotateZ(0deg);
+                    -ms-transform: rotateZ(0deg);
+                    -webkit-transform: rotateZ(0deg);
+                }
+
+                10% {
+                    transform: rotateZ(-30deg);
+                    -ms-transform: rotateZ(-30deg);
+                    -webkit-transform: rotateZ(-30deg);
+                }
+
+                20% {
+                    transform: rotateZ(15deg);
+                    -ms-transform: rotateZ(15deg);
+                    -webkit-transform: rotateZ(15deg);
+                }
+
+                30% {
+                    transform: rotateZ(-10deg);
+                    -ms-transform: rotateZ(-10deg);
+                    -webkit-transform: rotateZ(-10deg);
+                }
+
+                40% {
+                    transform: rotateZ(7.5deg);
+                    -ms-transform: rotateZ(7.5deg);
+                    -webkit-transform: rotateZ(7.5deg);
+                }
+
+                50% {
+                    transform: rotateZ(-6deg);
+                    -ms-transform: rotateZ(-6deg);
+                    -webkit-transform: rotateZ(-6deg);
+                }
+
+                60% {
+                    transform: rotateZ(5deg);
+                    -ms-transform: rotateZ(5deg);
+                    -webkit-transform: rotateZ(5deg);
+                }
+
+                70% {
+                    transform: rotateZ(-4.28571deg);
+                    -ms-transform: rotateZ(-4.28571deg);
+                    -webkit-transform: rotateZ(-4.28571deg);
+                }
+
+                80% {
+                    transform: rotateZ(3.75deg);
+                    -ms-transform: rotateZ(3.75deg);
+                    -webkit-transform: rotateZ(3.75deg);
+                }
+
+                90% {
+                    transform: rotateZ(-3.33333deg);
+                    -ms-transform: rotateZ(-3.33333deg);
+                    -webkit-transform: rotateZ(-3.33333deg);
+                }
+
+                100% {
+                    transform: rotateZ(0deg);
+                    -ms-transform: rotateZ(0deg);
+                    -webkit-transform: rotateZ(0deg);
+                }
+            }
+
+        </style>
+
+        <div class="catering_banner">
+            <div class="container">
+                <div class="catering_banner_inner">
+                    <img src="images/logo.svg" alt="mix logo white"
+                        class="img-responsive" />
+                    <h3>Один из ведущих Catering сервисов</h3>
+                    <p>Бесплатная консультация</p>
+
+                    <div class="social-nav-element-two">
+                        <a href="https://www.instagram.com/milanocatering.uz">
+                            <img width="25" height="25" src="/images/icons/instagram.svg" alt="">
+                        </a>
+
+                        <a href="https://t.me/+-nWb5bij4-I5Mzgy">
+                            <img width="25" height="25" src="/images/icons/telegram.svg" />
+                        </a>
+
+                    </div>
+                    <div class="call-head">
+                        <img src="images/icons/single-call.svg" width="20" height="20" alt="">
+                        <a href="tel:+998998990181">99 899 01 81</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="feature" class="feature-two catering_light_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/food.jpg"
+                        alt="software page feature image" class="feature-two-img img-responsive">
+                </div>
+                <div class="col-md-6">
+
+                    <div class="feature-two-text">
+
+                        <div class="feature-two-header">
+                            <h2>Мы обслужим ваше событие на высшем уровне и с любовью!</h2>
+                            <p>
+                                Elegant Catering - это не просто сообщество профессионалов. Это команда единомышленников,
+                                каждый из которых увлечен своим делом.
+                                Мы внимательно следим за новыми тенденциями, быстро реагируем на спрос и всегда готовы
+                                удивить ваших гостей. Мы наслаждаемся творчеством, а наши клиенты — его результатами.
+                            </p>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="feature-two-feature m-b-30  wow fadeInRight">
+                                    <i class="icofont icofont-farmer1"></i>
+                                    <h5>Профессиональная работа</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="feature-two-feature m-b-30 wow fadeInRight">
+                                    <i class="icofont icofont-burger"></i>
+                                    <h5>Наш личный рекорд: 2540 блюд в сутки</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="feature-two-feature s-m-b-30 wow fadeInRight">
+                                    <i class="icofont icofont-dining-table"></i>
+                                    <h5>Отличное соотношение цена/качество</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="feature-two-feature wow fadeInRight">
+                                    <i class="icofont icofont-donut"></i>
+                                    <h5>Постоянное развитие и обучение</h5>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#categories" id="categories-page"></a>
+    <a name="categories">
+        <section id="causes" class="with_image catering_dark_bg">
+            <div class="container">
+                <div class="row"  id="category-wrapper">
+                    
+                </div>
+    
+                <div class="categories-page">
+                    
+                </div>
+            </div>
+        </section>
+    </a>
+
+    <section id="donate" class="call_to_action">
+        <div class="container">
+            <h3>Скидка 20% на каждую услугу</h3>
+            <a href="https://t.me/+998998990181" class="mix-btn" role="button">Оставить заявку</a>
+        </div>
+    </section>
+    
+    <footer id="contact" class="footer-two catering_light_bg">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <h2 class="footer-two-title">
+                    Наши контакты
+                </h2>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="tel-col">
+                            <a class="tel" href="tel:+998998990181">
+                                <img src="images/icons/single-call.svg" width="15px" height="15px" alt="">
+                                
+                                99 899 01 81
+                            </a> <br>
+
+                            <a class="tel" href="tel:90 014 33 99">
+                                <img src="images/icons/single-call.svg" width="15px" height="15px" alt="">
+
+                                90 014 33 99
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="email-col">
+                            <a class="email" href="mailto:milanocateringuz@gmail.com">milanocateringuz@gmail.com</a> <br>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="address-col">
+                            <p class="address">
+                                Узбекистан, Ташкент
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-mid">
+            <div class="container">
+
+                <div class="alert alert-danger hide" id="form_errors"></div>
+                <div class="alert alert-success hide" id="form_success"></div>
+
+                <form id="contact-form" class="footer-two-form">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="message">Ваше сообщение</label>
+                                <textarea name="message" rows="6" class="form-control" placeholder="Сообщение...."
+                                        id="message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label for="phoneNumber">Ваш телефон</label>
+                                        <input type="tel" id="phoneNumber" class="form-control" placeholder="+998" value="+998" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="name">Ваше имя</label>
+                                        <input id="name" type="text" name="name" class="form-control" placeholder="Имя" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="mix-btn" id="sendButton">Отправить сообщение</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+            
+            <div class="alert alert-warning success fade" role="alert">
+                Habar jo'natildi
+            </div>
+
+            <div class="alert alert-danger error fade" role="alert">
+                Error
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    
+    <script src="scripts/jquery.min.js"></script>
+    
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <script src="scripts/matchMedia.js"></script>
+
+    <script src="scripts/owl.carousel.js"></script>
+
+    <script src="scripts/venobox.min.js"></script>
+
+    <script src="scripts/select2.min.js"></script>
+
+    <script src="scripts/smooth-scroll.js"></script>
+
+    <script src="scripts/simplyCountdown.min.js"></script>
+
+    <script src="scripts/jquery.filterizr.min.js"></script>
+
+    <script src="scripts/wow.min.js"></script>
+
+    <script type="text/javascript" src="scripts/jquery-swipe-nav-plugin.js"></script>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
