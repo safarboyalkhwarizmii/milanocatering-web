@@ -1,5 +1,5 @@
 # milano-catering.uz
-The front-end side of Catering Service website
+The front-end side of catering Service Website
 
 <p dir="auto" style="display: flex; align-item: center;">
     <g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">
